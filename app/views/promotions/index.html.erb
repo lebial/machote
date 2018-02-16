@@ -1,0 +1,15 @@
+<div class="container has-text-centered">
+	<p class="title is-1">List of promotions </p>
+</div>
+
+<div class="container has-text-centered">
+  <%= link_to 'Add new Promotion', new_promotion_path%>
+</div>
+
+<div class="container">
+	<% @promotions.each do |promotion| %> 
+	<div class="card">
+		<h1><%= promotion.img_url %></h1>	
+	</div>	
+	<% end %>
+</div>

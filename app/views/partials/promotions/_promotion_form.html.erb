@@ -1,0 +1,21 @@
+<div class="container"> 
+	<%= form_for :promotion do |f| %>
+		<div class="field">
+			<%= f.label :img_url, class: 'label' %>	
+			<div class="control">
+				<%= f.text_field :img_url, class: 'input' %>
+			</div>
+		</div>
+		<div class="field">
+			<%= f.label :description, class: 'label' %>	
+			<div class="control">
+				<%= f.text_area :img_url, class: 'textarea' %>
+			</div>
+		</div>
+		  <%= submit_tag "Add", class: 'button is-primary' %>
+
+		<div class="button is-danger">
+		  <%= link_to 'Cancel', promotions_path%>
+		<div/>
+	<% end %>	
+</div>

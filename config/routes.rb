@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :addresses, only: %i[new index create]
-  root 'addresses#new'
+  resources :promotions, except: :show
+  root 'promotions#index'
 end

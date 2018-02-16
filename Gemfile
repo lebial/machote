@@ -5,6 +5,8 @@ group :production do
   gem 'unicorn-rails'
 end
 
+gem 'sass-rails'
+gem "bulma-rails", "~> 0.6.2"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'figgy'
 gem 'listen' # idk why this is needed
